@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/navbar.css">
+    <link rel="stylesheet" href="style/footer.css">
+</head>
+
+<body>
+    <div id="footer">
+      
+    </div>
+</body>
+
+</html>
+<script type="module">
+    import {mba_DB,ds_DB,ml_DB,bc_DB} from "./db.js"
+    import {footer,footer_js} from "./components/footer.js"
+    footer_js(mba_DB,ds_DB,ml_DB,bc_DB,footer) 
+
+</script>

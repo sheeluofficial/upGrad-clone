@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mba-course/</title>
+    <link rel="stylesheet" href="css/productPg.css">
+</head>
+
+<body>
+    <!-- ----------------------------------nav---------------------------------------------- -->
+
+    <!-- ----------------------------------nav---------------------------------------------- -->
+
+
+    <!-- ----------------------------------   BANNER   ---------------------------------------------- -->
+    <div class="product_banner" id="product_banner">
+        <div class="imgBox"
+            style="background-image: url(https://ik.imagekit.io/upgrad1/marketing-platform-assets/new-images%2Fprogram-backgrounds%2Funiversity/software_banner__1632240749151.png);">
+            <div class="nav">
+                <div class="item">
+                    <a href="#">Home</a>
+                    <a href="#"> Software Courses</a>
+                </div>
+            </div>
+            <div class="dtlBox">
+                <div class="item">
+                    <h1>Online Tech Programs from the <br>
+                    World’s Top Universities</h1>
+                    <p style="font-size: 15px;">
+                        Cloud Computing | Blockchain | Cyber Security | Full Stack Development| DevOps | Big Data
+                    </p>
+                    <button class="btn" onclick="location.href = `#callbackBox`">
+                        Request Callback
+                    </button>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="flotingBox relativePosition" id="flotingBox">
+            <div class="item">
+                <h4>50%</h4>
+                <p>Average Hike Recorded</p>
+            </div>
+            <div class="item">
+                <h4>WES</h4>
+                <p>Recognised</p>
+            </div>
+            <div class="item">
+                <h4>Harvard Case Studies</h4>
+                <p>Access</p>
+            </div>
+            <div class="item">
+                <h4>300+</h4>
+                <p>Hiring Partners</p>
+            </div>
+            <div class="item">
+                <h4>360 Degree</h4>
+                <p>Career Support</p>
+            </div>
+            <div class="item">
+                <h4>5 Out Of 6 Learners</h4>
+                <p>Get positive career growth.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ----------------------------------   BANNER   ---------------------------------------------- -->
+
+    <!-- ----------------------------------   CARD     ---------------------------------------------- -->
+    <div class="card_heading_main">
+        <h5>Featured Programs for you</h5>
+        <p id="card_heading_main_P"></p>
+    </div>
+    <div class="product_cardBox" id="product_cardBox">
+       
+
+    </div>
+    <div id="callbackBox">
+
+    </div>
+    <!-- ----------------------------------   CARD     ---------------------------------------------- -->
+</body>
+
+</html>
+<script src="scripts/scrollEvent.js"></script>
+
+<script type="module">
+    import { mba_DB, ds_DB } from './components/db.js';
+    const ds_database = JSON.parse(ds_DB());
+    import displayProductCard from './components/product_card.js'
+    import checkCallback from './scripts/product_callback.js'
+    import callbackBoxItem from './components/callbackBox.js'
+
+
+    const card_heading_main_P = document.getElementById("card_heading_main_P");
+    const cardBox = document.getElementById("product_cardBox");
+
+
+    
+
+    // ----- card heading
+    card_heading_main_P.innerHTML = `Viewing ${ds_database.length} programs`;
+
+
+    // ----- display card
+     displayProductCard(ds_database, cardBox);
+
+     // ------ call me back box
+        const callbackBox = document.getElementById("callbackBox");
+        callbackBox.innerHTML = callbackBoxItem();
+
+    // ----- callme back
+        const doCAllback = document.getElementById("doCAllback");
+        doCAllback.addEventListener("click", () => {
+            checkCallback();
+        })
+     
+    // cardBox.innerHTML =  displayProductCard(mba_database);
+    // const displayProductCard = mba =>{
+            
+    //     mba.map( a=> {
+    //         // console.log(a.productPg);
+    //         let item = document.createElement("div");
+    //         item.className = "card";
+    //         item.innerHTML = `
+    //         <div class="img" style="background-image: url(${a.productPg.imgUrl})"></div>
+    //         <div class="imgContent">
+    //             <div class="top">
+    //                 <h2>${a.productPg.title}</h2>
+    //                 <p>${a.productPg.des_a}</p>
+    //                 <p>${a.productPg.des_b}</p>
+
+    //             </div>
+    //             <div class="bottom">
+    //                     <div class="storry">
+    //                         <div class="item">
+    //                             <p>Starts On</p>
+    //                             <h5>${a.productPg.StartsOn}<h5>
+    //                         </div>
+    //                         <div class="item">
+    //                             <p>Eligibility</p>
+    //                             <h5>${a.productPg.eligibility}<h5>
+    //                         </div>
+    //                     </div>
+    //                     <div class="buttonbox">
+    //                         <button class="dwnldBtn"> Download Brochure </button>
+    //                         <button class="navigationBtn"> Learn More </button>
+    //                     </div>
+    //             </div>
+
+    //         </div>`;
+    //         item.addEventListener("click", () => {
+    //             console.log(a)
+    //         })
+
+    //         cardBox.append(item)            
+            
+    //     })
+    // }
+
+
+
+</script>

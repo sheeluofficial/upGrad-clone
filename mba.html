@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+    />
+    <link rel="stylesheet" href="style/normalize.css" />
+    <link rel="stylesheet" href="style/navbar.css" />
+    <link rel="stylesheet" href="style/footer.css" />
+  </head>
+  <style>
+    .backimg {
+      background-image: url("https://www.ssbm.ch/wp-content/uploads/2020/08/pic1.jpg");
+      background-size: cover;
+      position: relative;
+      height: 100vh;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .logoimg {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      width: 15rem;
+    }
+    .startpt {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      font-size: 3rem;
+      line-height: 1;
+      color: white;
+    }
+    .startdiv {
+      padding-left: 2rem;
+      color: white;
+      font-size: 20px;
+    }
+    .apply {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      margin-left: 2rem;
+      margin-right: 2rem;
+      margin-top: 2rem;
+      font-weight: 700;
+      background-color: red;
+      border-radius: 0.375rem;
+    }
+    .absolute {
+      position: absolute;
+      display: flex;
+      margin-left: 2rem;
+      margin-right: 2rem;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      margin-top: 8rem;
+      margin-bottom: 8rem;
+      font-size: 1.125rem;
+      line-height: 1.75rem;
+      font-weight: 700;
+      color: black;
+      background-color: white;
+      border-radius: 0.375rem;
+      --tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+      box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+        var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+      bottom: -12rem;
+      width: 92%;
+    }
+    .onl {
+      flex: 1 1 0%;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    .online {
+      font-size: 0.75rem;
+      line-height: 1rem;
+      --tw-text-opacity: 1;
+      color: rgba(156, 163, 175, var(--tw-text-opacity));
+    }
+    .pro {
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+    }
+    .overview {
+      margin-left: 10rem;
+      margin-right: 3rem;
+      margin-top: 10rem;
+      margin-bottom: 1rem;
+      font-size: 3.25rem;
+      line-height: 2.5rem;
+      font-weight: bold;
+    }
+    .key {
+      margin-left: 10rem;
+      margin-right: 3rem;
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+      font-size: 1.875rem;
+      line-height: 2.25rem;
+    }
+    .program {
+      display: flex;
+      margin-left: 3rem;
+      margin-right: 3rem;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+      --tw-text-opacity: 1;
+      color: rgba(107, 114, 128, var(--tw-text-opacity));
+    }
+    .high {
+      flex: 1 1 0%;
+      margin-left: 6.5rem;
+      margin-right: 1rem;
+      padding-bottom: 10px;
+    }
+    .swiss {
+      padding: 10px;
+      font-weight: bold;
+    }
+    .aim {
+      flex: 1 1 0%;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      --tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+      box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+        var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+      padding-left: 3.5rem;
+      padding-right: 3.5rem;
+    }
+    .ronnie {
+      line-height: 25px;
+    }
+    .smalllogo {
+      padding-right: 2rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      margin-top: 4rem;
+
+      width: 8rem;
+    }
+    .syllabus {
+      display: flex;
+      padding: 3rem;
+      color: white;
+      background-color: rgb(230, 72, 72);
+      margin-top: 3.5rem;
+      margin-bottom: 3.5rem;
+    }
+    .syl {
+      font-weight: bold;
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+    }
+    .downsyl {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      margin-left: 20rem;
+      margin-right: 3rem;
+      font-weight: bold;
+      color: rgb(230, 72, 72);
+      background-color: white;
+      border-radius: 0.55rem;
+      width: 14rem;
+      height: 4rem;
+    }
+    .best {
+      margin-left: 7.5rem;
+    }
+    .who {
+      display: flex;
+    }
+    .eligibility {
+      font-size: 35px;
+      font-weight: bold;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      margin-left: 10rem;
+      margin-right: 4rem;
+    }
+    .aspiring {
+      font-size: 18px;
+      margin-bottom: 2rem;
+      margin-left: 10rem;
+      margin-right: 4rem;
+    }
+    #show {
+      color: royalblue;
+      text-decoration-line: underline;
+    }
+    .participate {
+      height: auto;
+      padding: 2rem;
+      margin-top: 3rem;
+      margin-bottom: 8rem;
+
+      color: white;
+      background-color: rgb(230, 72, 72);
+    }
+    .earn {
+      display: flex;
+    }
+    .global {
+      padding: 2rem;
+      margin-left: 7rem;
+    }
+    .executive {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      /* margin-left: 10rem; */
+      font-size: 1.875rem;
+      line-height: 2.25rem;
+    }
+    .ul {
+      margin: 2rem;
+      line-height: 2.5rem;
+      list-style-type: disc;
+    }
+    .certificate {
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+      margin-left: 10rem;
+      border-radius: 0.375rem;
+      width: 31rem;
+      height: 20rem;
+    }
+    .instructor {
+      margin-left: 11.5rem;
+      margin-right: 2rem;
+      font-size: 3rem;
+      line-height: 2.25rem;
+    }
+    .academic {
+      margin-left: 11.5rem;
+      margin-right: 2rem;
+      padding-top: 15px;
+      font-size: 1.5rem;
+    }
+    .person {
+      display: flex;
+      margin: 1rem;
+      overflow-x: scroll;
+    }
+    .dario {
+      flex: none;
+      padding: 2rem;
+      margin: 1rem;
+      text-align: center;
+      --tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+      box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+        var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+      width: 18rem;
+      height: 22rem;
+
+      overflow: hidden;
+    }
+    .darioimg {
+      margin: 0px auto;
+      text-align: center;
+      border-radius: 5rem;
+    }
+    .silic {
+      font-weight: 700;
+      font-size: 1.5rem;
+      padding-bottom: 15px;
+    }
+    .lyon {
+      margin: auto;
+      width: 9rem;
+    }
+    .res {
+      font-weight: lighter;
+      font-size: 17px;
+    }
+    /* .teacher {
+        margin-left: 7rem;
+      } */
+    .process {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+      margin-left: 10rem;
+    }
+    .admission {
+      margin: 2rem;
+      font-size: 2.5rem;
+      line-height: 2.25rem;
+      font-weight: bold;
+    }
+    .ad {
+      display: flex;
+      margin: 1rem;
+    }
+    .step {
+      flex: none;
+      padding: 2rem;
+      margin: 2.5rem;
+      --tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+      box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+        var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+      width: 17rem;
+      height: 10rem;
+    }
+    .allstep {
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+    }
+    .para {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      line-height: 1.25rem;
+    }
+    .structure {
+      padding: 2rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      background-color: #f5f5f5;
+    }
+    .fees {
+      font-size: 3rem;
+      line-height: 1;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      margin-left: 10rem;
+    }
+    .amount {
+      display: flex;
+    }
+    .total {
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+      font-size: 1.875rem;
+      line-height: 2.25rem;
+      margin-left: 10rem;
+    }
+    .plans {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      margin-left: 8rem;
+      margin-right: 8rem;
+      font-weight: 700;
+      color: white;
+      background-color: rgb(230, 72, 72);
+      border-radius: 0.25rem;
+      width: 10rem;
+    }
+    .emi {
+      font-size: 1.05rem;
+      line-height: 1.5rem;
+      margin-left: 10rem;
+      font-weight: lighter;
+    }
+    .empowerhead {
+      display: flex;
+      height: auto;
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+      margin: 2rem;
+      --tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+      box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+        var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    }
+    .empowermid {
+      flex: 1 1 0%;
+      padding: 2rem;
+    }
+    .empowering {
+      font-size: 3rem;
+      margin-left: 7.5rem;
+      line-height: 1;
+    }
+    .stopping {
+      --tw-text-opacity: 1;
+      color: rgba(107, 114, 128, var(--tw-text-opacity));
+      margin-top: 3.5rem;
+      margin-bottom: 3.5rem;
+      margin-left: 7.5rem;
+    }
+    .continue {
+      width: 70%;
+      padding: 1rem;
+      margin-left: 7.5rem;
+      margin-right: 2rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      font-weight: bold;
+      color: white;
+      background-color: rgb(230, 72, 72);
+      border-radius: 0.25rem;
+    }
+    .price {
+      flex: 1 1 0%;
+      padding: 2rem;
+      color: white;
+      background-color: rgb(230, 72, 72);
+    }
+    .benefits {
+      font-size: 3rem;
+      line-height: 1;
+    }
+    .lul {
+      margin-top: 3.5rem;
+      margin-bottom: 3.5rem;
+    }
+    .text {
+      font-size: 1.125rem;
+      line-height: 1.75rem;
+    }
+  </style>
+  <body>
+    <!-- navbar starts -->
+    
+      <div class="space-bet-flex navbar">
+         <div class="space-bet-flex left-nav ">
+            <div class="nav-logo"> up<span class="nav-logo-span">G</span>rad</div>
+            <div class=" space-bet-flex btn-style courses-btn" id="courses-btn">Courses<i class="fas fa-angle-down arrow"></i>           
+            </div>
+        </div>
+
+
+        <div class="space-bet-flex right-nav">
+           <div class="space-bet-flex text-btn-container">
+              <div class="nav-text-btn">HIRE FROM UPGRAD</div>
+              <div class="nav-text-btn">STUDY ABROAD</div>
+              <div class="nav-text-btn">FOR BUSINESS</div>
+              <div class="nav-text-btn ">
+                  MORE
+                  <i class="fas fa-angle-down arrow">
+                      
+                  </i>
+                  <div class="more">
+                      <h3 class="more-dropdown-text">Mentorship</h3>
+                      <h3 class="more-dropdown-text">Short Videos</h3>
+                      <h3 class="more-dropdown-text">Live MasterClass</h3>
+                      <h3 class="more-dropdown-text">Master Class</h3>
+                      <h3 class="more-dropdown-text">Refer and Earn</h3>
+                      <h3 class="more-dropdown-text">Blog</h3>
+                      <h3 class="more-dropdown-text">Become A Business Associate</h3>
+                  </div>
+                </div>
+           </div>
+          <div data-modal-target="#modal"  class="btn-style space-bet-flex" id="sign-up-btn">Sign Up</div>
+        </div>
+    </div>
+    <div class="modal" id="modal">
+        <div id="imgg">
+            <img src="https://media.istockphoto.com/vectors/various-people-with-smart-gadgetsbooks-on-backgroundeducation-and-vector-id1161994875"/>
+        </div>
+         
+        
+            <div  class="modal-body">
+                
+                <div id="details">
+                    <h2 id="h2">Enter Your Mobile Number To Start Learning</h2>
+                    <div id="dis"></div>
+                    <div id="num">
+                        <img src="https://www.countryflags.com/wp-content/uploads/india-flag-png-large.png"/>
+                        <h3>+91</h3>
+                        <input id="number" type="number" placeholder="99999 99999" />
+                    </div>
+                    <button id="continue">CONTINUE -></button>
+        
+                    <a href=""><h5>Proceed With Email</h5></a>
+        
+        
+                </div>
+                
+                
+            </div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        
+      
+      <div id="overlay"></div>
+    
+    <!-- navbar ends -->
+
+    <!-- scroll starts -->
+
+    <div class="backimg">
+      <img
+        src="https://tse3.mm.bing.net/th?id=OIP.qGcT78lvw73l9wasuoGXBwHaB4&pid=Api&P=0&w=591&h=151"
+        class="logoimg"
+      />
+      <h1 class="startpt">Executive MBA</h1>
+      <div class="startdiv">
+        Step into Professional achievement and business mastery with the<br /><span
+          >Executive MBA from Swiss School of Business and Management.</span
+        >
+      </div>
+      <button class="apply" id="bill">Apply Now</button>
+
+      <div class="absolute">
+        <div class="onl">
+          <div>Online</div>
+          <div class="online">Format</div>
+        </div>
+        <div class="onl">
+          <div>12 Months</div>
+          <div class="online">Recommended 8 hours/week</div>
+        </div>
+        <div class="onl">
+          <div>Dec 31, 2021</div>
+          <div class="online">Program Start Date</div>
+        </div>
+        <div class="onl">
+          <div>EMI Options</div>
+          <div class="online">Starting at Rs.12,396</div>
+        </div>
+        <div class="onl">
+          <div>5 out of 6 Learners</div>
+          <div class="online">Get Positive Career Growth</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Program Section -->
+    <div class="pro">
+      <div class="overview">Programe Overview</div>
+      <div class="key">Key Highlights</div>
+      <div class="program">
+        <div class="high">
+          <div class="swiss">
+            Degree from Swiss School of Business Management, Geneva
+          </div>
+          <div class="swiss">Group Coaching Sessions</div>
+          <div class="swiss">Career Assistance</div>
+        </div>
+        <div class="high">
+          <div class="swiss">7 Case Studies</div>
+          <div class="swiss">Mentorship Calls</div>
+          <div class="swiss">Access to premium upGrad alumni network</div>
+        </div>
+        <div class="aim">
+          <div class="ronnie">
+            "Our aim is simple: We strive to create high-impact, hands-on
+            experiences that prepare students for meaningful and productive
+            careers.”<br />
+            - Ronnie Screwvala, Co-Founder, upGrad
+          </div>
+          <img
+            src="https://tse3.mm.bing.net/th?id=OIP.qGcT78lvw73l9wasuoGXBwHaB4&pid=Api&P=0&w=591&h=151"
+            class="smalllogo"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- Syllabus -->
+    <div class="syllabus">
+      <div class="best">
+        <div class="syl">Syllabus</div>
+        <div>
+          Best-in-class content by leading faculty and industry leaders in the
+          form of videos, cases and projects.
+        </div>
+      </div>
+
+      <button class="downsyl">DOWNLOAD SYLLABUS</button>
+    </div>
+
+    <!-- program for -->
+    <div class="who">
+      <div>
+        <div class="eligibility">Who Is This Programme For?</div>
+        <div class="aspiring">
+          Managers and Aspiring
+          Managers,Enginers,Professional....&nbsp;&nbsp;<span id="show"
+            >Show more</span
+          >
+        </div>
+      </div>
+      <div>
+        <div class="eligibility">Minimum Eligibility</div>
+        <div class="aspiring">
+          Valid Bachelor's Degree or equivalent. Candidate
+          Must....&nbsp;&nbsp;<span id="show">Show more</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Executive Mba -->
+    <div class="participate">
+      <div>
+        <div class="earn">
+          <div class="global">
+            <div class="executive">Executive MBA degree from SSBM Geneva</div>
+            <div>
+              Complete all the courses successfully to obtain this recognition
+              from SSBM.
+            </div>
+            <ul class="ul">
+              <li>Earn an Executive MBA Degree</li>
+              <li>Get globally recognized status</li>
+            </ul>
+          </div>
+          <img
+            src="https://ik.imagekit.io/upgrad1/marketing-platform-assets/new-images%2Fprogram-certificates-v2/SSBMEMBAcertificate__1634291268748.png"
+            class="certificate"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Instructors -->
+    <div class="teacher">
+      <div class="instructor">Instructors</div>
+      <div class="academic">
+        World Class from top academic centres and corporates across Europe and
+        USA.
+      </div>
+      <div class="person">
+        <div class="dario">
+          <img
+            src="https://ik.imagekit.io/upgrad1/marketing-platform-assets/new-images%2Fprofile-pictures/DarioSilic__1614150834132.png"
+            class="darioimg"
+          />
+          <div class="silic">Dario Silic</div>
+          <div>PhD, University of Lyon 2, France</div>
+          <img
+            src="https://tse3.mm.bing.net/th?id=OIP.2HbaxIYvy1mcM2zL2oO9eAHaEK&pid=Api&P=0&w=299&h=169"
+            class="lyon"
+          />
+          <div class="res">
+            Dario's research interests are Financial engineering, Financial
+            management, Corporate finance, Europen Union.
+          </div>
+        </div>
+        <div class="dario">
+          <img
+            src="https://ik.imagekit.io/upgrad1/marketing-platform-assets/new-images%2Fprofile-pictures/anna__1633601792278.png"
+            class="darioimg"
+          />
+          <div class="silic">Anna Provodnikova</div>
+          <div>PhD, University of Moscow, Russia</div>
+          <img
+            src="https://tse3.mm.bing.net/th?id=OIP.ej2gAVVJiLOXqjMIIpE7XQHaFS&pid=Api&P=0&w=279&h=200"
+            class="lyon"
+          />
+          <div class="res">
+            Her research interests include management use of strategic tools in
+            a discortant world, as well as drivers of strategic success in a
+            turbulent.
+          </div>
+        </div>
+        <div class="dario">
+          <img
+            src="https://ik.imagekit.io/upgrad1/marketing-platform-assets/new-images%2Fprofile-pictures/MarioSilic__1614150335486.png"
+            class="darioimg"
+          />
+          <div class="silic">Mario Silic</div>
+          <div>PhD, University of St Gallen, Switzerland</div>
+          <img
+            src="https://tse4.mm.bing.net/th?id=OIP.sIkn1aWfiWy2PZdX1E_PpAHaCR&pid=Api&P=0&w=496&h=152"
+            class="lyon"
+          />
+          <div class="res">
+            He has over 15 years of professional experience in various senior
+            management positions.
+          </div>
+        </div>
+        <div class="dario">
+          <img
+            src="https://ik.imagekit.io/upgrad1/marketing-platform-assets/new-images%2Fprofile-pictures/AlexLyon__1614151237272.png"
+            class="darioimg"
+          />
+          <div class="silic">Alex Lyon</div>
+          <div>PhD, State University of New York, USA</div>
+          <img
+            src="https://tse3.mm.bing.net/th?id=OIP.Y1neZyE55JsLtPM0b4zzrgHaEH&pid=Api&P=0&w=287&h=160"
+            class="lyon"
+          />
+          <div class="res">
+            His area of study is Organizatioanal Communication with an emphasis
+            on leadership, power and ethics.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Admission process -->
+
+    <div class="process">
+      <div class="admission">Admission Process</div>
+      <div class="ad">
+        <div class="step">
+          <div class="allstep">Step 1: Complete the application</div>
+          <p class="para">
+            Fill out the application form with your academic and career details.
+          </p>
+        </div>
+        <div class="step">
+          <div class="allstep">
+            Step 2: Get Shortlisted and Receive the Offer letter
+          </div>
+          <p class="para">
+            Our admission committee will review your profile. Upon being
+            selected, an offer letter will be sent to you confirming your
+            admission.
+          </p>
+        </div>
+        <div class="step">
+          <div class="allstep">Step 3 : Block your Seat</div>
+          <p class="para">
+            Block your seat with a payment of INR 25,000 to enroll into the
+            Programme. Get access to the course material and begin your journey
+            to professional mastery!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fees Structure -->
+
+    <div class="structure">
+      <div class="fees">Programme Fee</div>
+      <div class="amount">
+        <div class="total">INR 4,50,000 (incl taxes)</div>
+        <button class="plans">View Plans</button>
+      </div>
+      <div class="emi">EMI options starting at Rs.12,396</div>
+    </div>
+
+    <!-- Empowering -->
+    <div class="empowerhead">
+      <div class="empowermid">
+        <div class="empowering">Empowering learners of tomorrow</div>
+        <div class="stopping">
+          Begin your journey with upskilling, whats stopping you?
+        </div>
+        <button class="continue">Continue Application</button>
+      </div>
+      <div class="price">
+        <div class="benefits">What's Included in the Price</div>
+        <div class="benefits">Features/Benefits</div>
+        <ul class="lul">
+          <li class="text">
+            Executive MBA from Swiss School of Business Administration, Geneva
+          </li>
+          <li class="text">Get an Executive MBA without quiting your job</li>
+          <li class="text">Career acceleration in your current role</li>
+          <li class="text">Career transition with 58% salary hike</li>
+          <li class="text">
+            Cutting-edge curriculum designed by industry experts
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+  </body>
+</html>
+<script type="module">
+  import { mba_DB, ds_DB, ml_DB, bc_DB } from "./db.js";
+  import { footer, footer_js } from "./components/footer.js";
+  footer_js(mba_DB, ds_DB, ml_DB, bc_DB, footer);
+
+  var a = document.getElementById("bill").addEventListener("click", bills);
+
+  function bills() {
+    window.location.href = "billing.html";
+    console.log("el");
+
+  }
+
+  //import {mba_DB,ds_DB,ml_DB,bc_DB} from "./db.js"
+   
+   let course_btn = document.getElementById("courses-btn");
+   
+   //course_btn.addEventListener("mouseenter",courseByCateg);
+   
+   
+
+   function courseByCateg() {
+       let container = document.createElement("div");
+       container.setAttribute("id","crslist-box");
+
+
+
+       let arrow = document.createElement("i");
+       arrow.setAttribute("class","fas");
+       arrow.classList.add("fa-angle-right")
+    
+       let mba = document.createElement("div");
+       mba.setAttribute("class","single-course-box");
+       mba.value = "mba";
+       let mba_title = document.createElement("h3");
+       mba_title.innerText = `MBA (${(JSON.parse(mba_DB()).length)})`;
+
+  
+       mba.append(mba_title,arrow);
+
+       let ds = document.createElement("div");
+       ds.setAttribute("class","single-course-box");
+       ds.value = "ds";
+       let ds_title = document.createElement("h3");
+       ds_title.innerText = `Data Science (${(JSON.parse(ds_DB()).length)})`;
+
+       let arrow1 = document.createElement("i");
+       arrow1.setAttribute("class","fas");
+       arrow1.classList.add("fa-angle-right")
+     
+       ds.append(ds_title,arrow1);
+
+       let ml = document.createElement("div");
+       ml.setAttribute("class","single-course-box");
+       ml.value = "ml";
+       let ml_title = document.createElement("h3");
+       ml_title.innerText = `AI | ML (${(JSON.parse(ml_DB()).length)})`;
+
+       let arrow2 = document.createElement("i");
+       arrow2.setAttribute("class","fas");
+       arrow2.classList.add("fa-angle-right")
+    
+       ml.append(ml_title,arrow2);
+      
+
+       let bc = document.createElement("div");
+       bc.setAttribute("class","single-course-box");
+       bc.value = "bc";
+       let bc_title = document.createElement("h3");
+       bc_title.innerText = `Technology & Blockchain (${(JSON.parse(bc_DB()).length)})`;
+
+       let arrow3 = document.createElement("i");
+       arrow3.setAttribute("class","fas");
+       arrow3.classList.add("fa-angle-right")
+   
+       bc.append(bc_title,arrow3);
+
+       let hr1 = document.createElement("hr");
+       let hr2 = document.createElement("hr");
+       let hr3 = document.createElement("hr");
+    //    let hr4 = document.createElement("hr");
+     
+    let di = document.createElement("div");
+        di.setAttribute("id","dc-container")
+
+       container.append(mba,hr1,ds,hr2,ml,hr3,bc);
+       
+       course_btn.append(container,di);
+
+
+      
+       
+     
+
+
+       
+   }
+
+
+let courseBoxArr = document.getElementsByClassName("single-course-box");
+
+for(let i=0; i<courseBoxArr.length; i++) {
+    courseBoxArr[i].addEventListener("mouseenter",()=>{
+     
+        let value = courseBoxArr[i].value;
+       if(value=="mba") {
+          let data = JSON.parse(mba_DB());
+          showHowerCourse(data);
+       } else if(value=="ds") {
+        let data = JSON.parse(ds_DB());
+          showHowerCourse(data);
+       } else if(value=="ml") {
+        let data = JSON.parse(ml_DB());
+          showHowerCourse(data);
+       } else if(value=="bc") {
+        let data = JSON.parse(bc_DB());
+          showHowerCourse(data);
+       }
+        
+    })
+
+}
+
+function showHowerCourse(data) {
+let course_container = document.getElementById("dc-container");
+
+course_container.innerHTML = "";
+
+
+data.forEach(element => {
+    
+    let course_card = document.createElement("div");
+    course_card.setAttribute("class","course-card");
+
+    let img_div = document.createElement("div");
+    let img = document.createElement("img");
+    img.src = element.homePg.logoimg;
+    img_div.append(img);
+
+    let course_detail = document.createElement("div");
+     course_detail.setAttribute("class","course-detail-in-card");
+     let h3 = document.createElement("h3");
+     h3.innerText = element.homePg.title;
+
+     let p = document.createElement("p");
+     p.innerText = element.homePg.institute;
+
+     let duration = document.createElement("h4");
+     duration.innerText = element.homePg?.duration;
+
+     course_detail.append(h3,p,duration);
+
+     let arrow_div = document.createElement("div");
+     let arrowRight = document.createElement("i");
+
+     arrowRight.setAttribute("class","fas");
+     arrowRight.classList.add("fa-arrow-right");
+
+     arrow_div.append(arrowRight);
+
+     course_card.append(img_div,course_detail,arrow_div);
+
+     course_container.append(course_card);
+
+
+
+});
+course_btn.append(course_container);
+}
+
+const openModalButtons = document.querySelectorAll('[data-modal-target]')
+const closeModalButtons = document.querySelectorAll('[data-close-button]')
+const overlay = document.getElementById('overlay')
+
+openModalButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const modal = document.querySelector(button.dataset.modalTarget)
+    openModal(modal)
+  })
+})
+
+overlay.addEventListener('click', () => {
+  const modals = document.querySelectorAll('.modal.active')
+  modals.forEach(modal => {
+    closeModal(modal)
+  })
+})
+
+closeModalButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const modal = button.closest('.modal')
+    closeModal(modal)
+  })
+})
+
+function openModal(modal) {
+  if (modal == null) return
+  modal.classList.add('active')
+  overlay.classList.add('active')
+}
+
+function closeModal(modal) {
+  if (modal == null) return
+  modal.classList.remove('active')
+  overlay.classList.remove('active')
+}
+
+let btn = document.getElementById("continue");
+var  count = 0;
+btn.addEventListener("click",cont);
+
+    let h2 = document.getElementById("h2");
+    let dis = document.getElementById("dis");
+    
+    //console.log(count);
+
+    let otp;
+    let email;
+
+
+    
+    
+    
+    
+    function cont(){
+        let number = document.getElementById("number").value;
+        h2.textContent = "Enter Your Name And Email To Continue";
+        //dis.textContent = `We send otp on this number `+number;
+        let num = document.getElementById("num");
+
+        num.innerHTML = `<input type="text" id="otp" placeholder="Enter Name"/>
+                          <input type="email" id="email" placeholder="Enter Email"/>    `;
+
+                          
+        //count++;
+        console.log(count);
+        
+        btn.removeEventListener("click",cont);
+        btn.addEventListener("click",cont1);
+
+        
+
+        
+        
+
+
+
+    }
+
+    
+        function cont1(otp){
+             otp = document.getElementById("otp").value;
+             email = document.getElementById("email").value;
+
+             console.log(otp);
+             closeModal(modal);
+             let user={
+               name:otp,
+               email:email,
+
+             };
+             
+
+             localStorage.setItem("userFinal",JSON.stringify(user));
+        
+
+        
+
+        if(otp=="1234"){
+            alert("logged in");
+            
+
+        };
+        
+    }
+
+    let change =  document.getElementById("number");
+    change.addEventListener("input",change_red);
+
+    function change_red(){
+      //count=0;
+      count++;
+      if(count==10){
+        btn.style.backgroundColor="red";
+      }
+    }
+</script>

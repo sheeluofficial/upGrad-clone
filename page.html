@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/navbar.css">
+    <link rel="stylesheet" href="style/normalize.css">
+    <style>
+        .after-carousel-box {
+            display: flex;
+            box-sizing: border-box;
+            flex-direction: column;
+
+        }
+
+        .characteristics,  .characteristics>div{
+            display: flex;
+            flex-direction: row;
+            box-sizing: border-box;
+            justify-content: space-evenly;
+        }
+        .characteristics{
+            padding: 0px 50px;
+            box-sizing: border-box;
+            /* margin: auto; */
+            padding-top:30px ;
+            width: 100vw;
+            height: 28vh;
+            background-color: rgb(250,251,252);
+        }
+        .characteristics>div img{
+            height: 80px;
+            border-radius: 50%;
+            box-sizing: border-box;
+            margin-right: 8px;
+        }
+        .characteristics>div div {
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            gap: 0px;
+            /* align-items: ; */
+            margin-left: 200px;
+            justify-content: flex-start; 
+            margin: 0px;
+        }
+        .characteristics>div>div h3{
+margin-top: 11px;
+font-size: 23px;
+font-weight: 500;
+color: #2c2c2c;
+margin-bottom: 0px;
+        }
+
+        .characteristics>div>div p{
+            margin: 0px;
+            margin-top: 5px;
+            font-weight: 400;
+            color: #4a4a4a; 
+            font-size: 19px;
+        }
+        
+.explore-course-btn{
+    border: none;
+    height: 4.2vw;
+    width: 26vw;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    position: absolute;
+    /* right: 50%; */
+    left: 36vw;
+    top: 24.3vh;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.unlist-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    height: 60vh;
+    /* border: red 1px solid; */
+   
+}
+
+.unlist-box h1{
+    font-size: 38px;
+    margin-top: 9vh;
+    margin-bottom: 7vh;
+    height: 70px;
+
+/* border: red 1px solid; */
+
+width: 50vw;
+margin-right: 30px;
+    font-weight: 600;
+    color: #222222;
+    box-sizing: border-box;
+}
+
+
+.univer{
+    padding: 0px 50px;
+            box-sizing: border-box;
+            margin: auto;
+            padding-top:0px ;
+            display: flex;
+            width: 100vw;
+            height: 20vh;
+            background-color: rgb(250,251,252);
+margin: 0px;
+align-items: center;
+justify-content: center;
+gap: 2vw;
+}
+.univer>img {
+    height: 16vh;
+    margin: 0px;
+    padding: 0px;
+    /* border: 1px solid red; */
+}
+
+
+    </style>
+</head>
+
+<body>
+    <div id="after-carousel-box">
+        <div class="characteristics">
+            <div>
+                <img src="https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/b3_v2__1631891124384.png"alt="">
+                <div>
+                    <h3>top 1%</h3>
+                    <p>Global Universities</p>
+                </div>
+            </div>
+
+            <div>
+                <img src="https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/1_on_1_icon__1632241051845.png" alt="">
+                <div>
+                    <h3>1:1 Sessions</h3>
+                    <p>With Experts</p>
+                </div>
+            </div> 
+            <div>
+                 <img src="https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/b1_v2__1631891093316.png" alt="">
+                 <div>
+                    <h3>Jobs in 1000+</h3>
+                    <p>Top Companies</p>
+                 </div>
+            </div>
+            <div>
+                 <img src="https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/b4_v2__1631891143728.png" alt="">
+                 <div>
+                    <h3>50%</h3>
+                    <p>Average Hikes</p>
+                 </div>
+            </div>
+        </div>    
+        <button class="explore-course-btn btn-style">EXPLORE OUR COURSES</button>
+        <div class="unlist-box">
+                <h1 class="characteristics">Our Top University Partners</h1>
+
+                <div class="univer">
+                    <img src="https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/UoA240x100__1631948960265.jpg" alt="">
+                    <img src="https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/Deakin240x100__1631948602154.jpg" alt="">
+                    <img src="https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/IITMadras240x100__1631948817031.jpg" alt="">
+                    <img src="https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/IIM-Kozhikode240x100__1631948695650.jpg" alt="">
+                </div>
+                <div  class="univer">
+                    <img src="https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/IIITB240x100__1631949019436.jpg" alt="">
+                    <img src="https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/MICA240x100__1631950152994.jpg" alt="">
+                    <img src="https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/Duke-240x100__1631947911881.jpg" alt="">
+                    <img src="https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/NMIMS240x100__1631948914734.jpg" alt="">
+                </div>
+            </div> 
+    </div>
+</body>
+
+</html>
+<script>
+
+</script>

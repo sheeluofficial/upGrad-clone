@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    header {
+      background: linear-gradient(0.25turn, #ff665c, #fd8773, #ff8648);
+      color: white;
+    }
+    .center_me {
+      margin: auto;
+      width: 77%;
+      padding: 2.3%;
+      display: flex;
+    }
+    .center_me > h1 {
+      padding-bottom: 18px;
+    }
+    .img {
+      width: 6rem;
+      height: 3rem;
+      margin-left: 70%;
+      margin-top: 2%;
+      cursor: pointer;
+    }
+    .whole {
+      margin: auto;
+      width: 50%;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+      background-color: white;
+      padding: 2.5%;
+    }
+    .personal {
+      text-align: left;
+      margin: 4rem 4rem;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .details {
+      font-size: 35px;
+      font-weight: bolder;
+      margin: 4% 0% 4%;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5%;
+    }
+    .name > label {
+      color: rgb(185, 178, 178);
+      font-size: 1.2em;
+    }
+    .name > input {
+      width: 80%;
+
+      padding: 2.4% 4%;
+      margin: 2% 0% 1.2%;
+    }
+    input,
+    select {
+      width: 95%;
+
+      padding: 5%;
+      margin: 2% 0% 1.2%;
+    }
+    label {
+      font-size: 1.2rem;
+      color: #949294;
+    }
+    .res {
+      padding: 7px;
+    }
+    .proceed {
+      text-align: center;
+      margin-top: 2%;
+    }
+    .button {
+      padding: 10px;
+      width: 50%;
+      font-size: 20px;
+      font-weight: bolder;
+      background: linear-gradient(0.25turn, #ff665c, #fd8773, #ff8648);
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      border: 0px solid;
+    }
+  </style>
+  <body>
+    <header>
+      <div class="center_me">
+        <h1>Program Payment</h1>
+        <img
+          src="https://quicknews-africa.net/wp-content/uploads/2021/06/upGrad_1622698520-768x272.jpg"
+          class="img"
+          onclick="up()"
+        />
+      </div>
+      <!-- yet to be implemented -->
+    </header>
+    <div class="whole">
+      <h1 class="details">Personal Details</h1>
+      <div>
+        <div class="grid">
+          <div class="name">
+            <label>First Name</label>
+            <input type="text" />
+          </div>
+          <div class="name">
+            <label>Last Name</label>
+            <input type="text" />
+          </div>
+          <div class="name">
+            <label>Email</label>
+            <input type="email" />
+          </div>
+          <div class="name">
+            <label>Phone Number</label>
+            <input type="number" />
+          </div>
+        </div>
+        <h1 class="details">Billing Details</h1>
+        <label>Address</label>
+        <input type="text" class="res" />
+        <label>City</label>
+        <input type="text" class="res" />
+        <label>State</label>
+        <input type="text" class="res" />
+        <label>Pincode</label>
+        <input type="number" class="res" />
+        <label>Country</label>
+        <input type="text" class="res" />
+        <label>Are you Registered GST user?</label>
+        <select class="res">
+          <option>--Select--</option>
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+      </div>
+      <div class="proceed">
+        <button class="button" onclick="paypage()">Proceed To Payment</button>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  function up() {
+    window.location.href = "index.html";
+  }
+
+  function paypage() {
+    window.location.href = "checkout1.html";
+  }
+</script>

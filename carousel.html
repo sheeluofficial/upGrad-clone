@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="/style/carousel.css">
+    <link rel="stylesheet" href="style/normalize.css">
+</head>
+<body>
+    <div id="img-carousel">
+        <i class="fas fa-chevron-left"></i>
+        <a href="" id="carousel-link">
+            <img src="" alt="" id="carousel-img"> 
+        </a>
+        <i class="fas fa-chevron-right"></i>
+    </div>
+</body>
+</html>
+
+<script>
+    let images = [
+    "carousel_src/Banner__1639034174307.jpg",
+    "carousel_src/2__1635260988274.jpg",
+    "carousel_src/3__1635261036491.jpg",
+    "carousel_src/4__1635261083350.jpg"
+    ];
+ let urls = [
+     "https://www.upgrad.com/",
+     "https://www.upgrad.com/mba-course/?utm_source=ORGANIC&utm_medium=ALL&utm_campaign=IND_BRD_WEB_ALL_homepagebanner_ALL_ALL_ALL_FF2MBA_ALL",
+     "https://www.upgrad.com/data-science-course/?utm_source=ORGANIC&utm_medium=ALL&utm_campaign=IND_BRD_WEB_ALL_homepagebanner_ALL_ALL_ALL_FF2MBA_ALL",
+     "https://www.upgrad.com/executive-mba-ssbm/?utm_source=ORGANIC&utm_medium=ALL&utm_campaign=IND_BRD_WEB_ALL_homepagebanner_ALL_ALL_ALL_FF2MBA_ALL"
+ ];
+let index = 1;
+
+setInterval(()=>{
+    index = (index + 1)%images.length;
+    carousel_img(images,urls,index)
+},6000);
+carousel_img(images,urls,0);
+
+function carousel_img(images,urls,index) {
+let a = document.getElementById("carousel-link");
+a.setAttribute("href",urls[index]);
+let img = document.getElementById("carousel-img");
+img.setAttribute("src",images[index]);
+ }
+
+ let left_arrow   = document.querySelectorAll("#img-carousel i")[0];
+ let right_arrow = document.querySelectorAll("#img-carousel i")[1];
+
+ left_arrow.addEventListener("click",()=>{
+     if(index==0) {
+index=images.length-1;
+     } else{
+         index--;
+     }
+  
+      carousel_img(images,urls,index);
+ }) 
+ right_arrow.addEventListener("click",()=>{
+     index = (index +1 )%images.length;
+      carousel_img(images,urls,index);
+ }) 
+
+
+</script>
+
+
+
+
+
+
+
+<!-- 
+
+
+
+
+// carousel starts
+document.getElementById("img-carousel").innerHTML = carousel();
+setInterval(()=>{
+    index = (index + 1)%images.length;
+    carousel_img(index)
+},6000);
+carousel_img(images,urls,0);
+
+
+let left_arrow   = document.querySelectorAll("#img-carousel i")[0];
+ let right_arrow = document.querySelectorAll("#img-carousel i")[1];
+
+ left_arrow.addEventListener("click",()=>{
+     if(index==0) {
+index=images.length-1;
+     } else{
+         index--;
+     }
+  
+      carousel_img(images,urls,index);
+ }) 
+ right_arrow.addEventListener("click",()=>{
+     index = (index +1 )%images.length;
+      carousel_img(images,urls,index);
+ })  -->

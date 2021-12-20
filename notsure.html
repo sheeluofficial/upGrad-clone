@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/navbar.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+    <title>Document</title>
+    <style>
+        .notsure-box, .alumni{
+            display: flex;
+            flex-direction: column;
+            /* justify-content: flex-start; */
+            /* align-items: flex-start; */
+            
+            width: 100vw;
+            box-sizing: border-box;
+            padding: 0px 8vw;
+
+
+        }
+        .alumni{
+            margin-top: 60px;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .alumni div{
+            box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .alumni img{
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .title-alumni{
+            margin-left: 8vw;
+            font-size: 35px;
+            opacity: 85%;
+        }
+
+        
+        .notsure-box>div:nth-child(1), .notsure-box>div:nth-child(2),  .notsure-box div:nth-child(4){
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .notsure-box>div:nth-child(1){
+   font-size: 20px;
+   color:#222222 ;
+   font-weight: 400;
+   margin-top: 40px;
+   margin-bottom: 0px;
+        }
+        .notsure-box>div:nth-child(2){
+            font-size: 26px;
+   color:#222222 ;
+   margin-top: 0px;
+   font-weight: 700;
+        }
+        .notsure-box>div:nth-child(4) button, .download-handbook button{
+            font-size: 24px;
+            font-weight: 700;
+ background-color: rgb(34,34,34);
+   /* margin-top: 0px; */
+   padding:15px 30px;
+   font-weight: 700;
+   margin-top: 20px;
+   color: white;
+   border-radius: 6px;
+
+        }
+
+        .recommended{
+            display: flex;
+            flex-direction: row;
+            height: 345px;
+            justify-content: space-between;
+            /* border: thistle 1px solid; */
+
+        }
+        .recommended img{
+        /* width: 25vw; */
+        border-radius: 6px;
+        filter: invert(20%);
+        height: 30vh;
+     
+          
+
+        }
+        .recommended div{
+            display: flex;
+            flex-direction: column;
+            width: 27vw;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+       
+          
+
+        }
+        .recommended div h3{
+       font-size: 20px;
+       font-weight: 700;
+       margin: 10px 20px;
+       color: #222222;
+          
+
+        }
+        .recommended div p{
+       font-size: 16px;
+       font-weight: 400;
+       margin-top: 0px;
+       margin: 10px 20px;
+       color: #222222;
+        }
+        .recommended div button {
+       font-size: 14px;
+       font-weight: 400;
+       margin: 10px 20px;
+       /* margin-top: 0px; */
+       color: #29b6f6;
+       background-color: white;
+       border: #29b6f6 1px solid;
+       width: 100px;
+       border-radius: 5px;
+       padding: 6px 0px;
+        }
+/* .alumni{
+    display: flex;
+    flex-direction: row;
+    width: 100vh;
+
+} */
+.alumni div{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.body-color{
+    background-color: rgb(245,245,245);
+    margin-top: 20px;
+    padding: 35px 0px;
+    padding-bottom: 150px;
+}
+.download-handbook {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   margin-top: 60px;
+}
+.media-presence{
+    margin-bottom: 40px;
+}
+.media-presence div:nth-child(1){
+    color: #78909c;
+}
+
+.media-presence>div:nth-child(3), .contact>div:nth-child(3){
+    display: flex;
+    flex-direction: row;
+    height: 250px;
+    justify-content: space-between;
+
+}
+.media-presence>div:nth-child(3) div{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    width: 22vw;
+    border-radius: 7px;
+    height: 250px;
+    justify-content: space-between;
+    font-size: 20px;
+    color: #37474f;
+    font-weight: 600;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-bottom: 30px;
+
+}
+        
+    </style>
+</head>
+<body>
+    <div class="notsure-box">
+        <div>
+            <h3>
+                Not sure of the above domains?
+            </h3>
+        </div>
+        <div>
+            <h1>
+                Explore Free Courses
+            </h1>
+        </div>
+        <div class="recommended">
+            <div>
+                <img src="https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/DSS__1635767043795.png" alt="">
+                <div>
+                    <h3>Data Science</h3>
+                    <p>Building your foundation in the hottenst industry of ther 21st century</p>
+                    <button>Know More</button>
+                </div>
+            </div>
+            <div>
+                <img src="https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/mba_card__1635763648138.png" alt="">
+                <div>
+                    <h3>MBA and Management </h3>
+                    <p>Take your first step towards becoming a leader</p>
+                    <button>Know More</button>
+                </div>
+            </div>
+            <div>
+                <img src="https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/dm_card__1635763694192.png" alt="">
+                <div>
+                    <h3>Digital Marketing</h3>
+                    <p>The ultimate guide to building a rewarding career in Digital Marketing Industry</p>
+                    <button>Know More</button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <button>View All Free Courses  <i class="fas fa-arrow-right"></i></button>
+        </div>
+    </div>
+
+    <div class="notsure-box">
+        <div>
+            <h3>
+                Want to learn life skills quickly?
+            </h3>
+        </div>
+        <div>
+            <h1>
+                Explore Free videos & Live classes
+            </h1>
+        </div>
+        <div class="recommended">
+            <div>
+                <img src="src/44__1600412224382.jpeg" alt="">
+                <div>
+                    <h3>Live Classes</h3>
+                    <p>Building your foundation in the hottenst industry of ther 21st century</p>
+                    <button>Know More</button>
+                </div>
+            </div>
+            <div>
+                <img src="src/career_guidance__1604591559086.jpeg" alt="">
+                <div>
+                    <h3>Master Classes</h3>
+                    <p>Take your first step towards becoming a leader</p>
+                    <button>Know More</button>
+                </div>
+            </div>
+            <div>
+                <img src="src/free-101__1592577223094.png" alt="">
+                <div>
+                    <h3>Short Video</h3>
+                    <p>The ultimate guide to building a rewarding career in Digital Marketing Industry</p>
+                    <button>Know More</button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <button>View All Free Courses  <i class="fas fa-arrow-right"></i></button>
+        </div>
+    </div>
+<div class="body-color">
+        <h3 class="title-alumni">Our Alumni</h3>
+  
+<div class="alumni">
+
+    <div>
+        <img src="https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/aa__1600125771940.jpg" alt="">
+        <h3>Amarpal Singh</h3>
+     
+    </div>
+    <div>
+        <img src="https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/ff__1600125870959.jpg" alt="">
+        <h3>Santhos Francis</h3>
+     
+    </div>
+    <div>
+        <img src="https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/AK__1600173517619.jpg" alt="">
+        <h3>Akash Kumar</h3>
+    
+    </div>
+    <div>
+        <img src="https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/vv__1600175764695.jpg" alt="">
+        <h3>Jai Singh Bhagat</h3>
+ 
+    </div>
+    <div>
+        <img src="https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/yy__1600175870988.jpg" alt="">
+        <h3>Jaya Priya</h3>
+
+    </div>
+    <div>
+        <img src="https://ik.imagekit.io/upgrad1/marketing-platform-assets/sprites%2Fimages/me__1600176006491.jpg" alt="">
+        <h3>Mathew George</h3>
+     
+    </div>
+</div>
+<h3 class="title-alumni">Where our Alumni Works</h3>
+<img src="src/Screenshot 2021-12-19 105311.png" alt="" class="alumni">
+<div  class="download-handbook">
+<button>
+    GET CAREER HANDBOOK <i class="fas fa-download"></i>
+</button>
+</div>
+</div>
+
+<div class="notsure-box media-presence">
+    <div>
+        <h3>upGrad in the News</h3>
+    </div>
+    <div><h1>Our Media Presence</h1></div>
+    <div>
+        <div>upGrad scores $185 million this year to join India’s Unicorns
+        </div>
+        <div>upGrad along upGrad Rekrut facilitates a CTC hike of 302 percent in a quarter
+        </div>
+        <div>
+            upGrad along upGrad Rekrut facilitates a CTC hike of 302 percent in a quarter</div>
+    </div>
+</div>
+
+<div class="contact notsure-box">
+    <div> <h3>
+        For queries, feedback & assistance
+    </h3>
+</div>
+<div>
+    <h1>
+        upGrad Learner Support
+        <h4>
+            (7 AM - 12 AM)
+        </h4>
+    </h1>
+  
+</div>
+
+
+</div>
+</body>
